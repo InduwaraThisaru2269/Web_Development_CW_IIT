@@ -57,21 +57,8 @@ body {
     align-items: center;
     width: 30px;
     height: 30px;
-    border: 2px solid black;
     border-radius: 50%;
-    padding: 2px;
-}
-
-.user-icon svg {
-    width: 24px;
-    height: 24px;
-}
-
-/* Update SVG colors to black */
-.user-icon circle,
-.user-icon path {
-    fill: black;
-    stroke: black;
+    padding-right: 30px;
 }
 
 
@@ -115,6 +102,230 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+.facts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    text-align: center; /* Ensures text is centered */
+    padding: 10px 10px;
+}
+
+.facts-container img {
+    max-width: 80%; /* Ensures the image is responsive */
+    height: auto;
+}
+
+.cards-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cards-title h2 {
+    font-size: 32px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: bold;
+    color: #81600f;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Dark overlay for the whole card */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.card:hover::before {
+    background: rgba(0, 0, 0, 0.6); /* Darkens the whole card */
+}
+
+/* Card image should remain unaffected */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Title and button container */
+.card-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2; /* Ensures the text appears above the dark overlay */
+    transition: top 0.3s ease;
+    background-color: black;
+}
+
+.card-content h3 {
+    color: #ffcc00; /* Initial title color */
+    font-size: 22px;
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, margin-bottom 0.3s ease;
+}
+
+/* Initially hidden button */
+.learn-more {
+    text-decoration: none;
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.card:hover .card-content {
+    top: 50%; /* Move title to center */
+    background-color: transparent;
+}
+
+.card:hover h3 {
+    color: white; /* Change title color */
+    margin-bottom: 15px; /* Push space for button */
+}
+
+.card:hover .learn-more {
+    opacity: 1; /* Show button */
+}
+
+
+.footer {
+    background-color: #fdef8f;
+    padding: 30px 20px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Logo Section */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 20px;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+.footer-logo img {
+    max-height: 80px;
+}
+
+/* About Us, Newsletter, Social Media */
+.footer-links,
+.footer-newsletter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+    padding-left: 10px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #b87333;
+}
+
+/* Newsletter Input */
+.newsletter-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.newsletter-input input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
+    padding: 5px;
+}
+
+.newsletter-input button {
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
