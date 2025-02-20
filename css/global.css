@@ -7,8 +7,20 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #fdef8f;
-    padding: 10px 20px;
 }
+
+.navbar-logo {
+    display: flex;
+    align-items: center;   /* Vertically center the logo */
+    justify-content: center; /* Horizontally center the logo */
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;  /* Adjust width as per your requirement */
+    height: auto;  /* Maintain aspect ratio */
+}
+
 
 .nav-links {
     list-style: none;
@@ -65,31 +77,36 @@ body {
 .container {
     display: flex;
     align-items: center;
+    gap: 20px; /* Adds a little gap between the image and text content */
 }
 
 .container img {
     width: 750px; 
     height: 100%; 
     object-fit: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .text-content {
     width: 50%;
-    padding: 40px;
+    padding: 20px; /* Reduced padding */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .text-content h1 {
-    font-size: 64px;
+    font-size: 50px; /* Reduced font size */
     font-family: "Lexend Deca", serif;
     font-weight: bold;
     color: #81600f;
 }
 
 .text-content h3 {
-    font-size: 36px;
+    font-size: 30px; /* Reduced font size */
     font-family: "Lexend Deca", serif;
     font-weight: bold;
     color: #C28400;
@@ -106,14 +123,14 @@ body {
 .facts-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-    text-align: center; /* Ensures text is centered */
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
     padding: 10px 10px;
 }
 
 .facts-container img {
-    max-width: 80%; /* Ensures the image is responsive */
+    max-width: 80%;
     height: auto;
 }
 
@@ -152,7 +169,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Dark overlay for the whole card */
 .card::before {
     content: "";
     position: absolute;
@@ -166,10 +182,9 @@ body {
 }
 
 .card:hover::before {
-    background: rgba(0, 0, 0, 0.6); /* Darkens the whole card */
+    background: rgba(0, 0, 0, 0.6);
 }
 
-/* Card image should remain unaffected */
 .card img {
     width: 100%;
     height: 100%;
@@ -177,7 +192,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Title and button container */
 .card-content {
     position: absolute;
     top: 80%;
@@ -185,34 +199,33 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-    z-index: 2; /* Ensures the text appears above the dark overlay */
+    z-index: 2;
     transition: top 0.3s ease;
     background-color: black;
 }
 
 .card-content h3 {
-    color: #ffcc00; /* Initial title color */
+    color: #ffcc00;
     font-size: 22px;
     font-family: "Lexend Deca", sans-serif;
     margin-bottom: 10px;
     transition: color 0.3s ease, margin-bottom 0.3s ease;
 }
 
-/* Initially hidden button */
 .learn-more {
     text-decoration: none;
     background: #ffcc00;
     color: black;
     padding: 10px 20px;
     border-radius: 6px;
+    font-family: "Lexend Deca", sans-serif;
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-/* Hover Effects */
 .card:hover .card-content {
-    top: 50%; /* Move title to center */
+    top: 50%;
     background-color: transparent;
 }
 
@@ -224,7 +237,6 @@ body {
 .card:hover .learn-more {
     opacity: 1; /* Show button */
 }
-
 
 .footer {
     background-color: #fdef8f;
@@ -241,7 +253,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Logo Section */
 .footer-logo {
     display: flex;
     align-items: center;
@@ -255,7 +266,6 @@ body {
     max-height: 80px;
 }
 
-/* About Us, Newsletter, Social Media */
 .footer-links,
 .footer-newsletter {
     flex: 1;
@@ -293,7 +303,6 @@ body {
     color: #b87333;
 }
 
-/* Newsletter Input */
 .newsletter-input {
     display: flex;
     align-items: center;
