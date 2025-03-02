@@ -747,4 +747,59 @@ input, textarea{
     }
 }
 
+/*Hero section*/
+.hero{
+    text-align: center;
+    padding: 50px;
+    background-color: #e0ffe0;
+}
+.hero h1{
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.hero p{
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.introduction-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/*content section*/
+section{
+    padding: 40px;
+    max-width: 100px;
+    margin: auto;
+}
+ h2{
+    color: #6b4f1d;
+    text-align: center;
+    font-size: 1.8em;
+
+ }
+  h3{
+    color: #ffcc00;
+    margin-top: 20px;
+  }
+
+  ul{
+    padding-left: 20px;
+  }
+
+  ul li{
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  .image-description img, .image-description2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
 
