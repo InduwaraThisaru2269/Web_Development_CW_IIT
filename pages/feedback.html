@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Header -->
     <div class="navbar">
         <div class="navbar-logo">
             <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative" class="logo">
         </div>
 
         <ul class="nav-links">
-            <li><a href="../pages/home.html" class="active">HOME</a></li>
+            <li><a href="../pages/home.html">HOME</a></li>
             <li><a href="../pages/table.html">DATA</a></li>
             <li><a href="#">VOLUNTEER</a></li>
-            <li><a href="#">FEEDBACK</a></li>
+            <li><a href="../pages/feedback.html">FEEDBACK</a></li>
             <li><a href="#">TEAM</a></li>
             <li><a href="#">SITE MAP</a></li>
         </ul>
@@ -29,69 +32,65 @@
         </div>
     </div>
 
-    
+    <!-- Feedback Form Section -->
 
-    <div class="container">
-        <div class="text-content">
-            <h1>Our Mission</h1>
-            <h3>Nourishing Lives, Ending Hunger</h3>
-            <p>At Zero Hunger Initiative, we believe that no one should go to bed hungry. Our mission is to create a world where every individual, regardless of their background, has access to nutritious food. Through education, community-driven initiatives, and sustainable solutions, we strive to combat hunger and empower communities.</p>
-        </div>
+    <div class="feedback-container">
+        <h1>We Value Your Feedback </h1>
 
-        <div>
-            <img src="../images/homepage-image-2.jpg" alt="Children">
-        </div>
+        
+
+        <form onsubmit="showPopup(event)">
+            <label > Name: </label>
+            <div class="name-inputs">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+           
+            <label > Email Address</label>
+            <input type ="email-address"  placeholder="Enter Your Email Address" required>
+            
+            <label> Contact Number: </label>
+            <input type="tel" placeholder="Enter Your Phone Number">
+
+            <div class="rating-section">
+                <h2>How would you rate your experience with us?</h2>
+                <div class="stars">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" class="star">★</label>
+        
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" class="star">★</label>
+        
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" class="star">★</label>
+        
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" class="star">★</label>
+        
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" class="star">★</label>
+                </div>
+            </div>
+
+            <label> What was The Reason For Your Visit ?</label>
+            <input type="text" placeholder="Type here..."> </textarea>
+
+            <label> Give us your feedback on our website: </label>
+            <textarea placeholder="Write your feedback here..."></textarea>
+
+            <button type="submit" class="submit-btn"> Submit Feedback </button>
+
+        </form>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <p>Thank you for your feedback! 😊</p>
+                <button onclick="closePopup()"> OK </button>
+            </div>
     </div>
 
-    <div class="facts-container">
-        <div class="text-content">
-            <h1>Facts</h1>
-        </div>
-    
-        <div>
-            <img src="../images/homepage-image-3.jpg" alt="SDG Report">
-        </div>
-    </div>
 
-    <div class="cards-title">
-        <h2>Key Areas of Impact</h2>
-    </div>
 
-    <div class="cards-container">
-        <div class="card">
-            <img src="../images/card-image-1.jpg" alt="Food Security">
-            <div class="card-content">
-                <h3>Food Security</h3>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    
-        <div class="card">
-            <img src="../images/card-image-2.jpg" alt="Sustainable Farming">
-            <div class="card-content">
-                <h3>Sustainable Farming</h3>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    
-        <div class="card">
-            <img src="../images/card-image-3.jpg" alt="Nutrition Programs">
-            <div class="card-content">
-                <h3>Empowering Farmers</h3>
-                <a href="../pages/content_ST2.html" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    
-        <div class="card">
-            <img src="../images/card-image-4.jpg" alt="Community Support">
-            <div class="card-content">
-                <h3>Technology & Innovation</h3>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    </div>
-    
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Logo Section -->
@@ -99,7 +98,7 @@
                 <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
                 <img src="../svgs/un-logo.svg" alt="United Nations">
             </div>
-    
+
             <!-- About Us Links -->
             <div class="footer-links">
                 <h3>About Us</h3>
@@ -118,7 +117,7 @@
                     <li><a href="#">Student 4</a></li>
                 </ul>
             </div>
-    
+
             <!-- Newsletter Section -->
             <div class="footer-newsletter">
                 <h3>Newsletter</h3>
@@ -129,11 +128,12 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="footer-bottom">
             <p>Contact | Copyright | Privacy Notice | Terms Of Use</p>
         </div>
     </footer>
-    
-</body>  
+
+</body>
+
 </html>
