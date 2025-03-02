@@ -1,0 +1,108 @@
+/* Splash Screen Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.zero-hunger {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 160px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(180deg, #F6D58D 0%, #E09C07 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for non-supporting browsers */
+}
+
+.splash-container {
+    background: url('../assets/splash.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for better text visibility */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #FFC107; /* Yellow */
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #FFFFFF; /* Ensure full white text for readability */
+}
+
+.progress-bar-container {
+    width: 40%;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #FFC107;
+    border-radius: 5px;
+    animation: loading 4s linear forwards;
+}
+
+@keyframes loading {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+.redirecting {
+    font-size: 16px;
+    font-weight: bold; 
+    text-align: center;
+    color: #FFA500; 
+}
+
+/* Group Members Section */
+.group-members h4 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.3em;
+    color: white;
+}
+
+.group-members {
+    text-align: center; 
+    list-style: none; 
+    padding: 0;
+    font-size: 18px; 
+}
