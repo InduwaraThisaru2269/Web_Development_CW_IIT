@@ -1,19 +1,21 @@
 /* Splash Screen Styles */
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     color: white;
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .zero-hunger {
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 128px;
+    font-size: clamp(48px, 10vw, 128px);
     font-weight: 700;
-    line-height: 160px;
+    line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
     background: linear-gradient(180deg, #F6D58D 0%, #E09C07 100%);
@@ -26,7 +28,9 @@ body {
 .splash-container {
     background: url('../assets/splash.jpeg') no-repeat center center/cover;
     height: 100vh;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -42,22 +46,28 @@ body {
 .content {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
     padding: 20px;
+    max-width: 1200px;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: clamp(2em, 5vw, 3.5em);
     font-weight: bold;
     color: #FFC107; /* Yellow */
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: clamp(1em, 3vw, 1.4em);
     font-weight: bold;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: clamp(1em, 2vw, 1.2em);
     max-width: 600px;
     margin: 0 auto;
     color: #FFFFFF; /* Ensure full white text for readability */
@@ -65,6 +75,7 @@ p {
 
 .progress-bar-container {
     width: 40%;
+    min-width: 200px;
     height: 10px;
     background: #fff;
     border-radius: 5px;
@@ -86,7 +97,7 @@ p {
 }
 
 .redirecting {
-    font-size: 16px;
+    font-size: clamp(14px, 1.5vw, 18px);
     font-weight: bold; 
     text-align: center;
     color: #FFA500; 
@@ -96,13 +107,17 @@ p {
 .group-members h4 {
     font-weight: bold;
     text-decoration: underline;
-    font-size: 1.3em;
+    font-size: clamp(16px, 2vw, 20px);
     color: white;
 }
 
-.group-members {
-    text-align: center; 
-    list-style: none; 
+.group-members ul {
+    list-style: none;
     padding: 0;
-    font-size: 18px; 
+    font-size: clamp(14px, 1.5vw, 18px);
+    text-align: center;
+}
+
+.group-members ul li {
+    margin: 5px 0;
 }
