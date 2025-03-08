@@ -342,11 +342,15 @@ body {
 /* General Table Styling */
 
 .table-title {
-    font-size: 40px; /* Reduced font size */
+    font-size: 40px;
     font-family: "Lexend Deca", serif;
     font-weight: bold;
     color: #81600f;
-    margin-left: 350px;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: block; 
+    width: fit-content;
 }
 
 .table-container {
