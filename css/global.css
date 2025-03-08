@@ -841,18 +841,22 @@ section{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .team-member img {
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .team-member .name {
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.2 rem;
+    text-align: center;
 }
 
 /* Click (Active) Animation */
