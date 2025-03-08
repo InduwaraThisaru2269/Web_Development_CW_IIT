@@ -1,0 +1,123 @@
+/* Splash Screen Styles */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.zero-hunger {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: clamp(48px, 10vw, 128px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(180deg, #F6D58D 0%, #E09C07 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for non-supporting browsers */
+}
+
+.splash-container {
+    background: url('../assets/splash.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for better text visibility */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: clamp(2em, 5vw, 3.5em);
+    font-weight: bold;
+    color: #FFC107; /* Yellow */
+}
+
+h3 {
+    font-size: clamp(1em, 3vw, 1.4em);
+    font-weight: bold;
+}
+
+p {
+    font-size: clamp(1em, 2vw, 1.2em);
+    max-width: 600px;
+    margin: 0 auto;
+    color: #FFFFFF; /* Ensure full white text for readability */
+}
+
+.progress-bar-container {
+    width: 40%;
+    min-width: 200px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #FFC107;
+    border-radius: 5px;
+    animation: loading 4s linear forwards;
+}
+
+@keyframes loading {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+.redirecting {
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: bold; 
+    text-align: center;
+    color: #FFA500; 
+}
+
+/* Group Members Section */
+.group-members h4 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: clamp(16px, 2vw, 20px);
+    color: white;
+}
+
+.group-members ul {
+    list-style: none;
+    padding: 0;
+    font-size: clamp(14px, 1.5vw, 18px);
+    text-align: center;
+}
+
+.group-members ul li {
+    margin: 5px 0;
+}
