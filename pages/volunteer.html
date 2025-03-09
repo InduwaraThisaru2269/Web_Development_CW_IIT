@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Opportunities</title>
-    <link rel="stylesheet" href="../css/global.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Global styles -->
     <link rel="stylesheet" href="../css/volunteer.css"> <!-- Page-specific styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,12 @@
             <li><a href="../pages/table.html">DATA</a></li>
             <li><a href="../pages/volunteer.html" class="active">VOLUNTEER</a></li>
             <li><a href="../pages/feedback.html">FEEDBACK</a></li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="/pages/sitemap.html">SITE MAP</a></li>
+            <li><a href="../pages/teampage.html">TEAM</a></li>
+            <li><a href="../pages/sitemap.html">SITE MAP</a></li>
         </ul>
 
         <div class="user-icon">
-            <a href="/pages/userprofile.html"><img src="../svgs/user-icon.svg" alt="User"></a>
+            <a href="/pages/userprofile.html"><img  src="../svgs/user-icon.svg" alt="User"></a>
         </div>
     </div>
     <!-- back to top button -->
@@ -117,29 +117,80 @@
                 </div>
 
                 <div class="form-group terms-container">
-                    <label>
+                    <label for="terms">
                         <input type="checkbox" id="terms" required>
-                        <label for="terms">I agree to the terms and conditions.</label>
+                        I agree to the terms and conditions.
                     </label>
-                </div>
+                </div>                
 
                 <button type="submit">Sign Up</button>
             </form>
         </section>
 
+        <div class="feedback-container">
+            <section id="ratings-reviews-section">
+                <!-- Overall Rating Summary -->
+                <div id="rating-summary">
+                    <h2>Volunteer Program Ratings</h2>
+                    <div class="rating-summary">
+                        <div class="rating-score">9.4/10</div>
+                        <div class="rating-level">Exceptional</div>
+                        <div class="review-count">(Based on 120 reviews)</div>
+                    </div>
+                </div>
+            
+                <!-- Individual Reviews Section -->
+                <div id="testimonials-section">
+                    <h3>What Our Volunteers Say</h3>
+            
+                    <div class="testimonial-card">
+                        <div class="rating-summary">
+                            <div class="rating-score">9.2/10</div>
+                        </div>
+                        <div class="review-description">
+                            This volunteering program was fantastic! I had a great experience helping the community, and the organization was very well-structured.
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">- Parker Schwartz</div>
+                            <div class="review-date">March 5, 2025</div>
+                        </div>
+                    </div>
+        
+                    <div class="testimonial-card">
+                        <div class="rating-summary">
+                            <div class="rating-score">8.7/10</div>
+                        </div>
+                        <div class="review-description">
+                            It was a great experience, and I learned a lot about the organization's operations. The only downside was the lack of coordination at times.
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">- Scarlette Bradshaw</div>
+                            <div class="review-date">March 3, 2025</div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Feedback Form Section -->
+                <div id="feedback-form">
+                    <h3>Leave Your Feedback</h3>
+                    <form action="#">
+                        <textarea id="user-feedback" name="feedback" placeholder="Write your review here..."></textarea>
+            
+                        <div class="rating-input">
+                            <button type="button" class="emoji-btn">😊</button>
+                            <button type="button" class="emoji-btn">😐</button>
+                            <button type="button" class="emoji-btn">😞</button>
+                        </div>
+            
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">Submit Feedback</button>
+                            <button type="button" class="cancel-btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
 
-        <!-- Testimonials -->
-        <section class="article-container testimonials">
-            <h2>What Our Volunteers Say</h2>
-            <div class="testimonial-card">
-                <p>"Volunteering in food distribution changed my perspective. Highly recommend!" - Alex</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"Teaching kids was a rewarding experience. The team was amazing!" - Sarah</p>
-            </div>
-        </section>
-
-        <!-- FAQs -->
         <section class="article-container">
             <h2>Frequently Asked Questions</h2>
             <details>
@@ -157,42 +208,44 @@
         <div class="footer-container">
             <!-- Logo Section -->
             <div class="footer-logo">
-                <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
-                <img src="../svgs/un-logo.svg" alt="United Nations">
+                <img class="footer-logo-img" src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
+                <img class="footer-logo-img" src="../svgs/un-logo.svg" alt="United Nations">
             </div>
     
             <!-- About Us Links -->
-            <div class="footer-links">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="../pages/volunteer.html">Volunteer</a></li>
+
+            <div class="footer-links about-us">
+                <h3 class="footer-links-title">About Us</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/teampage.html">Our Team</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/volunteer.html">Volunteer</a></li>
                 </ul>
             </div>
-
-            <div class="footer-links">
-                <h3>Page Editors</h3>
-                <ul>
-                    <li><a href="#">Induwara Thisaru</a></li>
-                    <li><a href="#">Sanketh Kudahetti</a></li>
-                    <li><a href="#">Student 3</a></li>
-                    <li><a href="#">Student 4</a></li>
+    
+            <!-- Page Editors Links -->
+            <div class="footer-links page-editors">
+                <h3 class="footer-links-title">Page Editors</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST1.html">Sanketh Kudahetti</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="#">Venuja Riveen</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="#">Julith Shenali</a></li>
                 </ul>
             </div>
     
             <!-- Newsletter Section -->
             <div class="footer-newsletter">
-                <h3>Newsletter</h3>
-                <p>Sign Up For All The SDG2 News</p>
-                <div class="newsletter-input">
-                    <input type="text" placeholder=" ">
-                    <button>GO</button>
+                <h3 class="footer-newsletter-title">Newsletter</h3>
+                <p class="footer-newsletter-description">Sign Up For All The SDG2 News</p>
+                <div class="newsletter-input-container">
+                    <input class="newsletter-input" type="text" placeholder=" ">
+                    <button class="newsletter-button">GO</button>
                 </div>
             </div>
         </div>
     
         <div class="footer-bottom">
-            <p>Contact | Copyright | Privacy Notice | Terms Of Use</p>
+            <p class="footer-bottom-text">Contact | Copyright | Privacy Notice | Terms Of Use</p>
         </div>
     </footer>
 </body>

@@ -1,8 +1,8 @@
 const volunteerPrograms = [
-    { id: 1, name: "Food Distribution", category: "food", date: "2025-03-15", available: true,image: "../assets/Food_Volunteer.jpg", description: "Help distribute food to those in need in local communities.", location: "Local Community Centers", duration: "Ongoing" },
-    { id: 2, name: "Teaching Kids", category: "education", date: "2025-03-20", available: true, image: "../assets/Teaching_students.jpg", description: "Teach children essential skills for their future.", location: "Community Schools", duration: "3 Months" },
-    { id: 3, name: "Urban Farming", category: "agriculture", date: "2025-04-01", available: false, image: "../assets/Farming_Community.jpg", description: "Help build urban farms to promote sustainability.", location: "City Parks", duration: "Ongoing" },
-    { id: 4, name: "Community Kitchen", category: "food", date: "2025-03-25", available: true, image: "../assets/Kitchen_Volunteer.jpg", description: "Assist in cooking and distributing meals in community kitchens.", location: "Community Centers", duration: "Ongoing" }
+    { id: 1, name: "Food Distribution", category: "food", date: "2025-03-15", available: true,image: "../images/Food_Volunteer.jpg", description: "Help distribute food to those in need in local communities.", location: "Local Community Centers", duration: "Ongoing" },
+    { id: 2, name: "Teaching Kids", category: "education", date: "2025-03-20", available: true, image: "../images/Teaching_students.jpg", description: "Teach children essential skills for their future.", location: "Community Schools", duration: "3 Months" },
+    { id: 3, name: "Urban Farming", category: "agriculture", date: "2025-04-01", available: false, image: "../images/Farming_Community.jpg", description: "Help build urban farms to promote sustainability.", location: "City Parks", duration: "Ongoing" },
+    { id: 4, name: "Community Kitchen", category: "food", date: "2025-03-25", available: true, image: "../images/Kitchen_Volunteer.jpg", description: "Assist in cooking and distributing meals in community kitchens.", location: "Community Centers", duration: "Ongoing" }
 ];
 
 function displayPrograms(programs = volunteerPrograms) {

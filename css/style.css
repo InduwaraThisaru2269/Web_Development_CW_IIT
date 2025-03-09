@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    font-family: "Lexend Deca", serif;
+}
+
+/*Back To Top Button styles*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #b99608;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.back-to-top:hover {
+    background-color: #b99608;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
+
+/*Navbar styles*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdef8f;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;   /* Vertically center the logo */
+    justify-content: center; /* Horizontally center the logo */
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;  /* Adjust width as per your requirement */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: "Lexend Deca", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #b87333;
+}
+
+.nav-links a.active {
+    border-bottom: 3px solid #b87333;
+}
+
+.user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-right: 30px;
+}
+
+/*Footer styles*/
+
+.footer {
+    background-color: #fdef8f;
+    padding: 30px 20px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 20px;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+.footer-logo-img {
+    max-height: 80px;
+}
+
+.footer-links,
+.footer-newsletter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+    padding-left: 10px;
+}
+
+.footer-links-title,
+.footer-newsletter-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links-item {
+    margin-bottom: 8px;
+}
+
+.footer-links-link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.footer-links-link:hover {
+    color: #b87333;
+}
+
+.newsletter-input-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    width: 200px;
+    margin-top: 5px;
+}
+
+.newsletter-input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
+    padding: 5px;
+}
+
+.newsletter-button {
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* STudent 2 Content Page */
+/* ====== Article Container ====== */
+.article-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Heading Styles ====== */
+.article-heading {
+    font-size: 32px;
+    color: #6b4f1d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article-sub-heading {
+    font-size: 26px;
+    color: #c28400;
+    margin-top: 30px;
+    border-bottom: 3px solid #c28400;
+    padding-bottom: 5px;
+}
+
+/* Sub-subheadings */
+.article-sub-subheading {
+    font-size: 22px;
+    color: #81600f;
+    margin-top: 20px;
+}
+
+
+/* ====== Paragraph Styling ====== */
+p {
+    font-size: 18px;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* ====== Image Styling ====== */
+.article-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.article-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* ====== List Styling ====== */
+.article-u-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.article-u-list li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+    color: #444;
+}
+
+/* Custom bullet icons */
+.article-u-list li::before {
+    content: "✔";
+    font-size: 18px;
+    font-weight: bold;
+    color: #c28400;
+    position: absolute;
+    left: 0;
+}
+
+/* ====== Blockquote Styling ====== */
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    background: #fdf3c4;
+    padding: 15px;
+    border-left: 5px solid #c28400;
+    margin: 30px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+    .article-container {
+        padding: 15px;
+    }
+
+    .article-heading {
+        font-size: 28px;
+    }
+
+    .article-sub-heading {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .article-u-list li {
+        font-size: 16px;
+    }
+
+    blockquote {
+        font-size: 18px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container img {
+        width: 100%;
+        height: 40vh; /* Adjust height for mobile */
+    }
+
+    .text-content {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.introduction-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
