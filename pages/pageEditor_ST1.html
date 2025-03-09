@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger Initiative</title>
+    <link rel="stylesheet" href="../css/pageEditor.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <script src="../js/backToTop.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative" class="logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../pages/home.html">HOME</a></li>
+            <li><a href="../pages/table.html">DATA</a></li>
+            <li><a href="../pages/volunteer.html">VOLUNTEER</a></li>
+            <li><a href="../pages/feedback.html">FEEDBACK</a></li>
+            <li><a href="../pages/teampage.html">TEAM</a></li>
+            <li><a href="../pages/sitemap.html">SITE MAP</a></li>
+        </ul>
+
+        <div class="user-icon">
+            <img src="../svgs/user-icon.svg" alt="User">
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">&#8679;</button>
+
+    <main>
+        <div class="student">
+            <h1>Sanketh Kudahetti</h1>
+            <h2>Student 1</h2>
+        </div>
+
+        <div class="pages-section">
+            <h2 class="pages-section-heading">Implemented Pages</h2>
+
+            <div>
+                <h2 class="pages-section-subheading-one">Splash Screen</h2>
+            
+                <ul>
+                    <li class="pages-section-subheading-two">Hero Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"splash-container"</span> to wrap all splash screen elements.</li>
+                                <li>Inside, <span>"content"</span> contains the heading (h1), description (p), and progress bar.</li>
+                                <li>Applied <span>"overlay"</span> to darken the background for better text visibility.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: flex; flex-direction: column; align-items: center; justify-content: center;</span> centers the content.</li>
+                                <li><span>background: url('../images/splash.jpeg') no-repeat center center/cover;</span> ensures a full-screen background.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                    <li class="pages-section-subheading-two">Progress Bar</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"progress-bar-container"</span> to wrap the progress animation.</li>
+                                <li>The <span>"progress-bar"</span> element gradually fills up within **4 seconds**.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>width: 40%; min-width: 200px;</span> ensures responsiveness.</li>
+                                <li><span>.progress-bar</span> uses <span>animation: loading 4s linear forwards;</span> to animate the progress.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                    <li class="pages-section-subheading-two">Auto-Redirect</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>&lt;meta http-equiv="refresh" content="4;url=home.html"&gt;</span> for automatic redirection.</li>
+                                <li>The page redirects users to the homepage after <strong>4 seconds</strong> without JavaScript.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                    <li class="pages-section-subheading-two">Group Members Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"group-members"</span> to list all contributors.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>text-align: center;</span> ensures names are centrally aligned.</li>
+                                <li><span>list-style: none;</span> removes bullet points for cleaner formatting.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                
+                <h3 class="link">Link to the Page: <a href="../pages/splash.html">Splash Screen</a></h3>
+            </div>            
+
+            <div>
+                <h2 class="pages-section-subheading-one">Volunteer Page</h2>
+            
+                <ul>
+                    <li class="pages-section-subheading-two">Filtering & Sorting Controls</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"controls"</span> container to wrap all filter and sorting elements.</li>
+                                <li>Inside, <span>"category-filter"</span> and <span>"availability-filter"</span> dropdowns allow users to filter volunteer programs.</li>
+                                <li>A <span>"button"</span> triggers the filtering function.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: flex; flex-wrap: wrap; gap: 15px;</span> ensures responsiveness.</li>
+                                <li><span>background: #fff; border-radius: 6px;</span> styles dropdowns for a clean look.</li>
+                            </ul>
+                        </li>
+            
+                        <li><strong>JavaScript: </strong>
+                            <ul>
+                                <li>The <span>"filterPrograms()"</span> function filters programs based on selected criteria.</li>
+                                <li>Programs are dynamically displayed based on the selected category and availability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                    <li class="pages-section-subheading-two">Volunteer Program Cards</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"volunteer-list"</span> container to dynamically display available programs.</li>
+                                <li>Each program is displayed inside a <span>"volunteer-card"</span> with a title, image, and details.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: grid; grid-template-columns: repeat(4, 1fr);</span> ensures a responsive layout.</li>
+                                <li><span>.volunteer-card:hover</span> applies a <span>background-color: #eaf0f1;</span> effect for better UX.</li>
+                            </ul>
+                        </li>
+            
+                        <li><strong>JavaScript: </strong>
+                            <ul>
+                                <li>The <span>"displayPrograms()"</span> function dynamically generates volunteer program cards.</li>
+                                <li>Each card includes an **image, description, availability status, location, and duration**.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                    <li class="pages-section-subheading-two">Volunteer Sign-Up Form</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"volunteer-form"</span> to collect user sign-up details.</li>
+                                <li>Includes input fields for **name, email, phone number, hours available, and relevant skills**.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>max-width: 97%;</span> ensures input fields are responsive.</li>
+                                <li><span>background-color: #eee;</span> improves visibility.</li>
+                            </ul>
+                        </li>
+            
+                        <li><strong>JavaScript: </strong>
+                            <ul>
+                                <li>The <span>"volunteer-form"</span> submits user data upon completion.</li>
+                                <li>A confirmation alert is displayed upon successful sign-up.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                    <li class="pages-section-subheading-two">Testimonials</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"testimonial-card"</span> to display feedback from past volunteers.</li>
+                                <li>Each testimonial is wrapped in a structured block with a supporting quote.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>border-left: 4px solid #C28400;</span> adds a distinct testimonial style.</li>
+                            </ul>
+                        </li>
+                    </ul>
+            
+                    <li class="pages-section-subheading-two">FAQs</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used the <span>&lt;details&gt;</span> and <span>&lt;summary&gt;</span> tags to create expandable FAQs.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>font-size: 18px; color: #81600f;</span> ensures easy readability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                
+                <h3 class="link">Link to the Page: <a href="../pages/volunteer.html">Volunteer Page</a></h3>
+            </div>            
+
+            <div>
+                <h2 class="pages-section-subheading-one">Content Page (Technology and Innovation to Achieve Zero Hunger)</h2>
+                
+                <ul>
+                    <li class="pages-section-subheading-two">Title & Structure</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;h1 class="article-heading"&gt;</span> creates the main title.</li>
+                                <li>The <span>&lt;main class="article-container"&gt;</span> wraps the entire content for structured layout.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>font-size: 32px;</span> Ensures prominence.</li>
+                                <li><span>text-align: center;</span> Centers the title.</li>
+                                <li><span>color: #6b4f1d;</span> Uses an earthy brown tone for an agricultural theme.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Subheadings & Section Hierarchy</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;h2 class="article-sub-heading"&gt;</span> marks major sections.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>border-bottom: 3px solid #c28400;</span> Enhances visual separation.</li>
+                                <li><span>font-size: 26px;</span> Ensures clear section division.</li>
+                                <li><span>color: #c28400;</span> Matches the theme.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Paragraph Styling</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Content blocks are placed inside <span>&lt;p&gt;</span> elements.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>text-align: justify;</span> Ensures clean text alignment.</li>
+                                <li><span>color: #444;</span> Soft contrast for easy reading.</li>
+                                <li><span>font-size: 18px;</span> Ensures readability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Images & Media</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;div class="article-image"&gt;</span> wraps images for styling.</li>
+                                <li>The <span>&lt;img src="../assets/ST1_Innovative.jpg" alt="Innovative Agricultural Solutions Image"&gt;</span> ensures accessibility.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>max-width: 100%;</span> Ensures responsiveness.</li>
+                                <li><span>border-radius: 10px;</span> Smoothens edges for aesthetics.</li>
+                                <li><span>box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);</span> Adds depth.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Lists & Custom Bullet Styling</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;ul class="article-u-list"&gt;</span> creates unordered lists.</li>
+                                <li>Each <span>&lt;li&gt;</span> element contains key information.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>padding-left: 30px;</span> Improves readability.</li>
+                                <li><span>position: relative;</span> Aligns list items properly.</li>
+                                <li><span>content: "✔";</span> Replaces default bullets with checkmarks.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Learn More (Redirects to external sources)</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;a href="https://innovation.wfp.org/"&gt;</span> redirects to World Food Programme for More Details.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li> Inherited Custom Bullets Style for Consistency.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </ul>
+
+                <h3 class="link">Link to the Page: <a href="../pages/content_ST1.html">Content Page 1</a></h3>
+            </div>
+        </div>
+        
+        <div class="challenges-section">
+            <h2 class="challenges-section-heading">Challenges and Lessons Learned</h2>
+            
+            <ul>
+                <li class="challenges-section-subheading-two">
+                    <span>Complex Layouts</span>
+                    <p>Designing complex layouts for the website, especially ensuring consistency across different screen sizes, presented a challenge. Achieving a balanced and responsive layout required multiple iterations of testing and refining CSS rules.</p>
+                    <ul>
+                        <li>Learned to use Flexbox and Grid systems to create flexible and dynamic layouts.</li>
+                        <li>Discovered the importance of media queries for responsive design.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>Cross-Browser Compatibility</span>
+                    <p>Ensuring the website looked the same across all browsers was a challenge due to differences in CSS rendering. Certain styles such as Flexbox or grid layouts behaved inconsistently, requiring extra work for fixes.</p>
+                    <ul>
+                        <li>Learned how to use browser prefixes and feature queries to ensure compatibility.</li>
+                        <li>Utilized online tools and browser developer tools to diagnose issues.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>Interactivity & User Experience</span>
+                    <p>Implementing interactive elements (like forms and filters) was challenging at first. Ensuring smooth interactions and providing meaningful feedback for users was a learning process.</p>
+                    <ul>
+                        <li>Discovered the importance of form validation and dynamic content updates for better UX.</li>
+                        <li>Used JavaScript effectively to manipulate DOM elements and handle events.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>Filtering and Sorting Volunteer Programs</span>
+                    <p>Initially, we encountered difficulties implementing an intuitive filtering and sorting mechanism for volunteer programs based on category and availability. The challenge lay in ensuring the filters update dynamically without causing page reloads.</p>
+                    <ul>
+                        <li>Learned the importance of JavaScript for dynamically updating content without page reloads.</li>
+                        <li>Improved user interaction through real-time filtering and sorting features.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>Design Consistency and Responsiveness</span>
+                    <p>Ensuring a consistent design across various screen sizes was a challenge. Specifically, aligning form inputs, dropdown menus, and volunteer cards required fine-tuning, especially for mobile views.</p>
+                    <ul>
+                        <li>Learned how to create responsive designs using Flexbox and Grid systems for different screen sizes.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>User Experience</span>
+                    <p>Creating an engaging user experience with real-time updates, such as filtering volunteer programs, was difficult. Ensuring the form elements, dropdowns, and buttons were intuitive and easy to use without overwhelming the user was crucial.</p>
+                    <ul>
+                        <li>Focused on intuitive UI components and interactions for a smoother user experience.</li>
+                        <li>Enhanced UX by focusing on user-centered design principles and interactive feedback.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>Form Validation</span>
+                    <p>Handling form validation for user inputs, including required fields and optional information, without causing errors or crashes, was a key challenge. Ensuring the data was captured and submitted effectively was critical.</p>
+                    <ul>
+                        <li>Used JavaScript and HTML5 validation techniques to ensure correct form submission.</li>
+                        <li>Ensured error messages and feedback mechanisms were clear and user-friendly.</li>
+                    </ul>
+                </li>
+        
+            </ul>    
+        </div>                
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
+                <img src="../svgs/un-logo.svg" alt="United Nations">
+            </div>
+
+            <!-- About Us Links -->
+            <div class="footer-links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="../pages/teampage.html">Our Team</a></li>
+                    <li><a href="../pages/volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Page Editors</h3>
+                <ul>
+                    <li><a href="../pages/pageEditor_ST1.html">Sanketh Kudahetti</a></li>
+                    <li><a href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
+                    <li><a href="#">Student 3</a></li>
+                    <li><a href="#">Student 4</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Sign Up For All The SDG2 News</p>
+                <div class="newsletter-input">
+                    <input type="text" placeholder=" ">
+                    <button>GO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Contact | Copyright | Privacy Notice | Terms Of Use</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
