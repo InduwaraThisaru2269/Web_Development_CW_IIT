@@ -116,3 +116,93 @@ button {
 button:hover {
     background: #a0760b;
 }
+
+h2{
+    color: #6b4f1d;
+    text-align: center;
+    font-size: 1.8em;
+
+ }
+  h3{
+    color: #ffcc00;
+    margin-top: 20px;
+  }
+
+  ul{
+    padding-left: 20px;
+  }
+
+  ul li{
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+
+/* Contact Card Styling */
+.contact-card {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Form Fields */
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-card label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #c7c5c5;
+    color: #c7c5c5;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input Field Focus Effect */
+.contact-card input:focus,
+.contact-card textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Submit Button */
+.contact-card button {
+    background: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-card button:hover {
+    background: #e6b800;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-card {
+        width: 100%;
+    }
+}
