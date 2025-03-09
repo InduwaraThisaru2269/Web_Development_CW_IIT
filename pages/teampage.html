@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero Hunger Initiative</title>
-    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/team.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
@@ -20,21 +21,22 @@
         <ul class="nav-links">
             <li><a href="../pages/home.html">HOME</a></li>
             <li><a href="../pages/table.html">DATA</a></li>
-            <li><a href="#">VOLUNTEER</a></li>
+            <li><a href="../pages/volunteer.html">VOLUNTEER</a></li>
             <li><a href="../pages/feedback.html">FEEDBACK</a></li>
-            <li><a href="../pages/teampage.html">TEAM</a></li>
-            <li><a href="#">SITE MAP</a></li>
+            <li><a href="../pages/teampage.html" class="active">TEAM</a></li>
+            <li><a href="../pages/sitemap.html">SITE MAP</a></li>
         </ul>
 
         <div class="user-icon">
-            <img src="../svgs/user-icon.svg" alt="User">
+            <a href="/pages/userprofile.html"><img  src="../svgs/user-icon.svg" alt="User"></a>
         </div>
     </div>
 
     <!--Team Page-->
-   <div  class="team-header">
-    <h1>Meet Our Team</h1>
-</div>
+   <div class="team-header">
+        <h1>Meet Our Team</h1>
+    </div>
+
     <section class="team-container">
        
        
@@ -42,10 +44,10 @@
             <div class="team-member" tabindex="0">
                 <img src="../images/boy 2.jpg" alt="Induwara Thisaru- Student 1" class="thumbnail">
                 <div class="member-details">
-                    <h3>Induwara Thisaru</h3>
+                    <h3>Sanketh Kudahetti</h3>
                     <p>Role: Student 1</p>
-                    <p>UOW No: </p>
-                    <P>IIT No: </P>
+                    <p>UOW No: W2052313 </p>
+                    <P>IIT No: 20234043</P>
                     <p>Tasks: Splash Screen,
                         <br> Volunteer Page</p>
                 </div>
@@ -54,10 +56,10 @@
             <div class="team-member" tabindex="0">
                 <img src="../images/man2.png" alt="Sanketh Kudahetti - Student 2" class="thumbnail">
                 <div class="member-details">
-                    <h3>Sanketh Kudahetti</h3>
+                    <h3>Induwara Thisaru</h3>
                     <p>Role: Student 2</p>
-                    <p>UOW No: </p>
-                    <P>IIT No: </P>
+                    <p>UOW No: W2052263 </p>
+                    <P>IIT No: 20234033</P>
                     <p>Tasks: Home Page, Table</p>
                 </div>
             </div>
@@ -86,56 +88,51 @@
         </div>
 
     </section>
-    
-
-   
-<br>
-<br>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Logo Section -->
             <div class="footer-logo">
-                <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
-                <img src="../svgs/un-logo.svg" alt="United Nations">
+                <img class="footer-logo-img" src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
+                <img class="footer-logo-img" src="../svgs/un-logo.svg" alt="United Nations">
             </div>
-
+    
             <!-- About Us Links -->
-            <div class="footer-links">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="../pages/teampage.html">Our Team</a></li>
-                    <li><a href="#">Volunteer</a></li>
+            <div class="footer-links about-us">
+                <h3 class="footer-links-title">About Us</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/teampage.html">Our Team</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/volunteer.html">Volunteer</a></li>
                 </ul>
             </div>
-
-            <div class="footer-links">
-                <h3>Page Editors</h3>
-                <ul>
-                    <li><a href="../pages/pageEditor_ST1.html">Sanketh Kudahetti</a></li>
-                    <li><a href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
-                    <li><a href="#">Student 3</a></li>
-                    <li><a href="#">Student 4</a></li>
+    
+            <!-- Page Editors Links -->
+            <div class="footer-links page-editors">
+                <h3 class="footer-links-title">Page Editors</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST1.html">Sanketh Kudahetti</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="#">Venuja Riveen</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="#">Julith Shenali</a></li>
                 </ul>
             </div>
-
+    
             <!-- Newsletter Section -->
             <div class="footer-newsletter">
-                <h3>Newsletter</h3>
-                <p>Sign Up For All The SDG2 News</p>
-                <div class="newsletter-input">
-                    <input type="text" placeholder=" ">
-                    <button>GO</button>
+                <h3 class="footer-newsletter-title">Newsletter</h3>
+                <p class="footer-newsletter-description">Sign Up For All The SDG2 News</p>
+                <div class="newsletter-input-container">
+                    <input class="newsletter-input" type="text" placeholder=" ">
+                    <button class="newsletter-button">GO</button>
                 </div>
             </div>
         </div>
-
+    
         <div class="footer-bottom">
-            <p>Contact | Copyright | Privacy Notice | Terms Of Use</p>
+            <p class="footer-bottom-text">Contact | Copyright | Privacy Notice | Terms Of Use</p>
         </div>
     </footer>
-
     
 
 </body>
