@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero Hunger Initiative</title>
     <link rel="stylesheet" href="../css/pageEditor.css">
-    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
             <h2 class="pages-section-heading">Implemented Pages</h2>
 
             <div>
-                <h2 class="pages-section-subheading-one">Home Page</h2>
+                <h2 class="pages-section-subheading-one" id="homeVal">Home Page</h2>
 
                 <ul>
                     <li class="pages-section-subheading-two">Hero Section</li>
@@ -118,10 +118,11 @@
                 </ul>
                 
                 <h3 class="link">Link to the Page: <a href="../pages/home.html">Home</a></h3>
+                <h3 class="link">Link to the Validation of the Page: <a href="../pages/validation_ST2.html#homePage">Home</a></h3>
             </div>
 
             <div>
-                <h2 class="pages-section-subheading-one">Table</h2>
+                <h2 class="pages-section-subheading-one" id="tableVal">Table</h2>
                 
                 <ul>
                     <li class="pages-section-subheading-two">Table Structure</li>
@@ -200,10 +201,11 @@
                 </ul>
 
                 <h3 class="link">Link to the Page: <a href="../pages/table.html">Table</a></h3>
+                <h3 class="link">Link to the Validation of the Page: <a href="../pages/validation_ST2.html#table">Table</a></h3>
             </div>
 
             <div>
-                <h2 class="pages-section-subheading-one">Content Page (Empowering Farmers to Achieve Zero Hunger)</h2>
+                <h2 class="pages-section-subheading-one" id="contentVal">Content Page (Empowering Farmers to Achieve Zero Hunger)</h2>
                 
                 <ul>
                     <li class="pages-section-subheading-two">Title & Structure</li>
@@ -322,6 +324,7 @@
                 </ul>
 
                 <h3 class="link">Link to the Page: <a href="../pages/content_ST2.html">Content Page 2</a></h3>
+                <h3 class="link">Link to the Validation of the Page: <a href="../pages/validation_ST2.html#content">Content Page 2</a></h3>
             </div>
         </div>
         
@@ -372,42 +375,42 @@
         <div class="footer-container">
             <!-- Logo Section -->
             <div class="footer-logo">
-                <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
-                <img src="../svgs/un-logo.svg" alt="United Nations">
+                <img class="footer-logo-img" src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
+                <img class="footer-logo-img" src="../svgs/un-logo.svg" alt="United Nations">
             </div>
-
-            <!-- About Us Links -->
-            <div class="footer-links">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="../pages/teampage.html">Our Team</a></li>
-                    <li><a href="#">Volunteer</a></li>
+    
+            <div class="footer-links about-us">
+                <h3 class="footer-links-title">About Us</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/teampage.html">Our Team</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/volunteer.html">Volunteer</a></li>
                 </ul>
             </div>
-
-            <div class="footer-links">
-                <h3>Page Editors</h3>
-                <ul>
-                    <li><a href="#">Student 1</a></li>
-                    <li><a href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
-                    <li><a href="../pages/pageEditor_ST3.html">Student 3</a></li>
-                    <li><a href="#">Student 4</a></li>
+    
+            <!-- Page Editors Links -->
+            <div class="footer-links page-editors">
+                <h3 class="footer-links-title">Page Editors</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST1.html">Sanketh Kudahetti</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="/pages/pageEditor_ST4.html">Venuja Riveen</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="#">Julith Shenali</a></li>
                 </ul>
             </div>
-
+    
             <!-- Newsletter Section -->
             <div class="footer-newsletter">
-                <h3>Newsletter</h3>
-                <p>Sign Up For All The SDG2 News</p>
-                <div class="newsletter-input">
-                    <input type="text" placeholder=" ">
-                    <button>GO</button>
+                <h3 class="footer-newsletter-title">Newsletter</h3>
+                <p class="footer-newsletter-description">Sign Up For All The SDG2 News</p>
+                <div class="newsletter-input-container">
+                    <input class="newsletter-input" type="text" placeholder=" ">
+                    <button class="newsletter-button">GO</button>
                 </div>
             </div>
         </div>
-
+    
         <div class="footer-bottom">
-            <p>Contact | Copyright | Privacy Notice | Terms Of Use</p>
+            <p class="footer-bottom-text">Contact | Copyright | Privacy Notice | Terms Of Use</p>
         </div>
     </footer>
 
