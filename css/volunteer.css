@@ -176,10 +176,11 @@ label {
     outline: none;
     transition: 0.3s ease-in-out;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    background-color: #eee;
 }
 
 input:focus {
-    border-color: #28a745;
+    border-color: #C28400;
     box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
 
@@ -219,7 +220,7 @@ textarea {
 .testimonial-card {
     background: #f9f9f9;
     padding: 15px;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #C28400;
     margin-bottom: 10px;
 }
 
