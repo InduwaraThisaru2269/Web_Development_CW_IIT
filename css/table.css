@@ -1,0 +1,123 @@
+/* General Table Styling */
+
+.table-title {
+    font-size: 40px;
+    font-family: "Lexend Deca", serif;
+    font-weight: bold;
+    color: #81600f;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: block; 
+    width: fit-content;
+}
+
+.table-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+    font-family: "Lexend Deca", serif;
+    padding-bottom: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Alternating row colors (Zebra Striping) */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ffeb99;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #C28400;
+    color: white;
+    font-size: 16px;
+}
+
+/* Table Logo */
+.table-logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Thumbnails */
+.thumbnail {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Tooltip Styling */
+/* Tooltip Container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* Tooltip Text */
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show Tooltip on Hover */
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Icons for Status */
+.icon {
+    font-size: 18px;
+}
+
+/* Clickable Links */
+td a {
+    text-decoration: none;
+    color: #C28400;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Merged Cell */
+.merged {
+    background-color: #81600f;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
