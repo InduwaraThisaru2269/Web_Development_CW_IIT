@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities</title>
+    <link rel="stylesheet" href="../css/global.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="../css/volunteer.css"> <!-- Page-specific styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <script src="../js/volunteer.js"></script>
+    <script src="../js/backToTop.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative" class="logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../pages/home.html">HOME</a></li>
+            <li><a href="../pages/table.html">DATA</a></li>
+            <li><a href="../pages/volunteer.html" class="active">VOLUNTEER</a></li>
+            <li><a href="../pages/feedback.html">FEEDBACK</a></li>
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">SITE MAP</a></li>
+        </ul>
+
+        <div class="user-icon">
+            <img src="../svgs/user-icon.svg" alt="User">
+        </div>
+    </div>
+    <!-- back to top button -->
+    <button id="backToTop" class="back-to-top">&#8679;</button>
+
+    <main class="volunteer-container">
+        <h1 class="article-heading">Volunteer Opportunities</h1>
+
+        <!-- Sorting & Filtering Controls -->
+        <div class="controls">
+            <div class="filter-group">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="">All</option>
+                    <option value="food">Food Distribution</option>
+                    <option value="education">Education</option>
+                    <option value="agriculture">Agriculture</option>
+                </select>
+            </div>
+        
+            <div class="filter-group">
+                <label for="availability-filter">Availability:</label>
+                <select id="availability-filter">
+                    <option value="">All</option>
+                    <option value="open">Open</option>
+                    <option value="full">Full</option>
+                </select>
+            </div>
+        
+            <button onclick="filterPrograms()">Apply Filters</button>
+        </div>
+
+        <!-- Volunteer Programs -->
+        <div id="volunteer-list" class="volunteer-list">
+            
+        </div>
+
+        <!-- Sign-up Section -->
+        <section class="article-container">
+            <h2>Sign Up for a Program</h2>
+            <form id="volunteer-form">
+                <div class="form-group">
+                    <label for="program-select">Choose a Program:</label>
+                    <select id="program-select" class="input-field" required>
+                        <option value="">Select a Program</option>
+                        <option value="food">Food Distribution</option>
+                        <option value="education">Education</option>
+                        <option value="agriculture">Agriculture</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" class="input-field" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" class="input-field" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" class="input-field" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hours">Hours You Can Volunteer Per Day:</label>
+                    <input type="number" id="hours" class="input-field" min="1" max="12" placeholder="Enter hours (1-12)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="availability">Availability (Days per Week):</label>
+                    <select id="availability" class="input-field" required>
+                        <option value="">Select Availability</option>
+                        <option value="1-2">1-2 Days</option>
+                        <option value="3-4">3-4 Days</option>
+                        <option value="5-6">5-6 Days</option>
+                        <option value="7">Every Day</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Relevant Skills or Experience (Optional):</label>
+                    <textarea id="skills" class="input-field" rows="3" placeholder="Mention any relevant skills or experience"></textarea>
+                </div>
+
+                <div class="form-group terms-container">
+                    <label>
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the terms and conditions.</label>
+                    </label>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+
+        <!-- Testimonials -->
+        <section class="article-container testimonials">
+            <h2>What Our Volunteers Say</h2>
+            <div class="testimonial-card">
+                <p>"Volunteering in food distribution changed my perspective. Highly recommend!" - Alex</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Teaching kids was a rewarding experience. The team was amazing!" - Sarah</p>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section class="article-container">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>How can I sign up?</summary>
+                <p>Simply select a program, enter your details, and submit the form.</p>
+            </details>
+            <details>
+                <summary>Are there any requirements?</summary>
+                <p>Each program may have specific requirements. Check the details before applying.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
+                <img src="../svgs/un-logo.svg" alt="United Nations">
+            </div>
+    
+            <!-- About Us Links -->
+            <div class="footer-links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="../pages/volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Page Editors</h3>
+                <ul>
+                    <li><a href="#">Induwara Thisaru</a></li>
+                    <li><a href="#">Sanketh Kudahetti</a></li>
+                    <li><a href="#">Student 3</a></li>
+                    <li><a href="#">Student 4</a></li>
+                </ul>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Sign Up For All The SDG2 News</p>
+                <div class="newsletter-input">
+                    <input type="text" placeholder=" ">
+                    <button>GO</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>Contact | Copyright | Privacy Notice | Terms Of Use</p>
+        </div>
+    </footer>
+</body>
+</html>
