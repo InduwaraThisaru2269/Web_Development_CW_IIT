@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - [Your Name]</title>
+    <link rel="stylesheet" href="../css/pageEditor.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <script src="../js/backToTop.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../pages/home.html">HOME</a></li>
+            <li><a href="../pages/table.html">DATA</a></li>
+            <li><a href="#">VOLUNTEER</a></li>
+            <li><a href="../pages/feedback.html">FEEDBACK</a></li>
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">SITE MAP</a></li>
+        </ul>
+        <div class="user-icon">
+            <img src="../svgs/user-icon.svg" alt="User">
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">&#8679;</button>
+
+    <main>
+        <div class="student">
+            <h1>Venuja Riveen</h1>
+            <h2>Student 4</h2>
+        </div>
+
+        <div class="pages-section">
+            <h2 class="pages-section-heading">Implemented Pages</h2>
+
+            <!-- User Profile Page -->
+            <div>
+                <h2 class="pages-section-subheading-one">User Profile Page</h2>
+                <ul>
+                    <li class="pages-section-subheading-two">Profile Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"profile-container"</span> to group the user's profile picture, name, and bio.</li>
+                                <li>Added an <span>input</span> field for users to upload a profile picture.</li>
+                                <li>Included a <span>textarea</span> for users to write a short bio.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: flex; flex-direction: column; align-items: center;</span> ensures a clean and centered layout.</li>
+                                <li><span>border-radius: 50%;</span> makes the profile picture circular.</li>
+                                <li><span>box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);</span> adds depth to the profile section.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <li class="pages-section-subheading-two">Preferences Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"preferences-container"</span> to group user preferences like dietary choices and notifications.</li>
+                                <li>Added <span>checkbox</span> inputs for users to select their preferences.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: grid; grid-template-columns: repeat(2, 1fr);</span> organizes preferences into a grid layout.</li>
+                                <li><span>gap: 20px;</span> ensures proper spacing between elements.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <h3 class="link">Link to the Page: <a href="../pages/userProfile.html">User Profile</a></h3>
+            </div>
+
+            <!-- Site Map Page -->
+            <div>
+                <h2 class="pages-section-subheading-one">Site Map Page</h2>
+                <ul>
+                    <li class="pages-section-subheading-two">Site Map Structure</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"sitemap-container"</span> to organize all links hierarchically.</li>
+                                <li>Added <span>ul</span> and <span>li</span> elements to create a nested list structure.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>list-style-type: none;</span> removes default bullet points for a cleaner look.</li>
+                                <li><span>padding-left: 20px;</span> creates indentation for nested lists.</li>
+                                <li><span>color: #6b4f1d;</span> matches the theme's color scheme.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <li class="pages-section-subheading-two">Interactive Elements</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Added <span>a</span> tags with <span>href</span> attributes for navigation.</li>
+                                <li>Included <span>hover</span> effects for better interactivity.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>transition: color 0.3s ease;</span> creates smooth hover effects.</li>
+                                <li><span>font-weight: bold;</span> highlights active links.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <h3 class="link">Link to the Page: <a href="../pages/siteMap.html">Site Map</a></h3>
+            </div>
+
+            <!-- Content Page (Sustainable Farming) -->
+            <div>
+                <h2 class="pages-section-subheading-one">Content Page (Sustainable Farming)</h2>
+                <ul>
+                    <li class="pages-section-subheading-two">Title & Structure</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>&lt;h1 class="article-heading"&gt;</span> for the main title.</li>
+                                <li>Wrapped content in <span>&lt;main class="article-container"&gt;</span> for a structured layout.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>font-size: 32px;</span> ensures prominence.</li>
+                                <li><span>text-align: center;</span> centers the title.</li>
+                                <li><span>color: #6b4f1d;</span> matches the theme.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <li class="pages-section-subheading-two">Paragraphs & Lists</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>&lt;p&gt;</span> for paragraphs and <span>&lt;ul&gt;</span> for lists.</li>
+                                <li>Added <span>&lt;blockquote&gt;</span> for key quotes.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>text-align: justify;</span> ensures clean alignment.</li>
+                                <li><span>color: #444;</span> provides soft contrast for readability.</li>
+                                <li><span>font-size: 18px;</span> ensures readability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <li class="pages-section-subheading-two">Images & Media</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>&lt;div class="article-image"&gt;</span> to wrap images.</li>
+                                <li>Added <span>alt</span> attributes for accessibility.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>max-width: 100%;</span> ensures responsiveness.</li>
+                                <li><span>border-radius: 10px;</span> smoothens edges.</li>
+                                <li><span>box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);</span> adds depth.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                <h3 class="link">Link to the Page: <a href="/pages/content_ST4.html">Sustainable Farming</a></h3>
+            </div>
+        </div>
+
+        <div class="challenges-section">
+            <h2 class="challenges-section-heading">Challenges and Lessons Learned</h2>
+            <ul>
+                <li class="challenges-section-subheading-two">
+                    <span>User Profile Page</span>
+                    <p>I found it hard to make the profile page look good on all devices. I used CSS to make it responsive.</p>
+                    <ul>
+                        <li>Learned how to use <span>flexbox</span> for layout.</li>
+                        <li>Used CSS properties like `font-smoothing` and `letter-spacing` for better readability.</li>
+
+                    </ul>
+                </li>
+                <li class="challenges-section-subheading-two">
+                    <span>Site Map Page</span>
+                    <p>It was tricky to organize all the links in a clear way. I used lists and CSS to style them.</p>
+                    <ul>
+                        <li>Learned to use <span>unordered lists</span> for organizing links in the site map.</li>                    </ul>
+                </li>
+                <li class="challenges-section-subheading-two">
+                    <span>Sustainable Farming Page</span>
+                    <p>I struggled to make the farming page look interesting. I added images and styled the text.</p>
+                    <ul>
+                        <li>Learned to use <span>CSS for text alignment.</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="ref-section">
+            <h2 class="ref-section-heading">References</h2>
+            <ul>
+                <li><a href="https://www.htmldog.com/guides/html/beginner/" target="_blank">HTML Dog</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img class="footer-logo-img" src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
+                <img class="footer-logo-img" src="../svgs/un-logo.svg" alt="United Nations">
+            </div>
+    
+            <!-- About Us Links -->
+            <div class="footer-links about-us">
+                <h3 class="footer-links-title">About Us</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/teampage.html">Our Team</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+    
+            <!-- Page Editors Links -->
+            <div class="footer-links page-editors">
+                <h3 class="footer-links-title">Page Editors</h3>
+                <ul class="footer-links-list">
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST1.html">Sanketh Kudahetti</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="../pages/pageEditor_ST4.html">Venuja Riveen</a></li>
+                    <li class="footer-links-item"><a class="footer-links-link" href="#">Julith Shenali</a></li>
+                </ul>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3 class="footer-newsletter-title">Newsletter</h3>
+                <p class="footer-newsletter-description">Sign Up For All The SDG2 News</p>
+                <div class="newsletter-input-container">
+                    <input class="newsletter-input" type="text" placeholder=" ">
+                    <button class="newsletter-button">GO</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p class="footer-bottom-text">Contact | Copyright | Privacy Notice | Terms Of Use</p>
+        </div>
+    </footer>
+</body>
+</html>
