@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger Initiative</title>
+    <link rel="stylesheet" href="../css/pageEditor.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <script src="../js/backToTop.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative" class="logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../pages/home.html" class="active">HOME</a></li>
+            <li><a href="../pages/table.html">DATA</a></li>
+            <li><a href="#">VOLUNTEER</a></li>
+            <li><a href="../pages/feedback.html">FEEDBACK</a></li>
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">SITE MAP</a></li>
+        </ul>
+
+        <div class="user-icon">
+            <img src="../svgs/user-icon.svg" alt="User">
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">&#8679;</button>
+
+    <main>
+        <div class="student">
+            <h1>Induwara Thisaru</h1>
+            <h2>Student 2</h2>
+        </div>
+
+        <div class="pages-section">
+            <h2 class="pages-section-heading">Implemented Pages</h2>
+
+            <div>
+                <h2 class="pages-section-subheading-one">Home Page</h2>
+
+                <ul>
+                    <li class="pages-section-subheading-two">Hero Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"container"</span> to group the text and image together</li>
+                                <li>Inside, <span>text-content</span> holds the title (h1), description (p), and subheading (h3), ensuring clear separation.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: flex; flex-direction: column; align-items: center;</span> ensures elements stack neatly.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <li class="pages-section-subheading-two">Facts Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"facts-container"</span> to center the facts text and image.</li>
+                                <li>The <span><img></span> inside adjusts dynamically to screen sizes.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: flex; flex-direction: column; align-items: center;</span> ensures elements stack neatly.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <li class="pages-section-subheading-two">Cards Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Used <span>"cards-container"</span>to group multiple "card" components.</li>
+                                <li>Each card contains an image (img), a title (h3), and a “Learn More” button (a).</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: flex; flex-wrap: wrap;</span> ensures responsiveness across different screen sizes</li>
+                                <li><span>box-shadow</span> and <span>border-radius</span> are used to enhance the visual appeal of the cards.</li>
+                                <li><span>.learn-more</span> uses <span>transition: all 0.3s ease-in-out;</span> to create a smooth hover effect.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <li class="pages-section-subheading-two">Footer</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>A <span>"footer"</span> holds all footer content, split into sections for logos, links, and a newsletter form.</li>
+                                <li>The <span>input</span> and <span>button</span> inside the newsletter section allow users to subscribe easily.</li>
+                            </ul>
+                        </li>
+                            
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>display: flex; justify-content: space-between;</span> aligns elements properly.</li>
+                                <li><span>max-width: 80%;</span> on images prevents excessive stretching.</li>
+                                <li></span>padding-bottom: 20px;</span> ensures enough spacing below text elements.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+                
+                <h3 class="link">Link to the Page: <a href="../pages/home.html">Home</a></h3>
+            </div>
+
+            <div>
+                <h2 class="pages-section-subheading-one">Table</h2>
+                
+                <ul>
+                    <li class="pages-section-subheading-two">Table Structure</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>"table-container"</span> wraps the table, ensuring responsiveness and a structured layout.</li>
+                                <li>The <span>table</span> element holds all data, with <span>thead</span> for headers and <span>tbody</span> for the main content.</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>border-collapse: collapse;</span> removes spacing between table cells for a clean look.</li>
+                                <li><span>width: 100%;</span> ensures the table expands fully within its container.</li>
+                                <li><span>overflow-x: auto;</span> allows horizontal scrolling on smaller screens.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Header Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Uses <span>th</span> inside <span>thead</span> to define column headings.</li>
+                                <li>First row contains the table title and spans across multiple columns.</li>
+                                <li>Added tooltips using <span>"tooltip"</span> for additional information.</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>background-color: #C28400;</span> provides a distinct visual contrast for headers.</li>
+                                <li><span>color: white;</span> ensures the text is readable against the dark background.</li>
+                                <li><span>font-weight: bold;</span> enhances visibility.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Table Body</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Each row (<span>tr</span>) represents a country with relevant statistics.</li>
+                                <li>Columns contain data for food security rate, malnutrition rate, and government support.</li>
+                                <li>Icons (✔ & ❌) indicate positive or negative progress.</li>
+                                <li><span></span> links direct users to detailed programs.</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>nth-child(even) { background-color: #f9f9f9; }</span> applies alternating row colors for better readability.</li>
+                                <li><span>padding: 10px;</span> ensures adequate spacing between content.</li>
+                                <li><span>hover { background-color: #ffeb99; }</span> highlights rows when hovered for interactivity.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Footer Section</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>A single row merges all columns (<span>colspan="4"</span>) to display a call-to-action message.</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>background-color: #FFD700;</span> makes the footer message stand out.</li>
+                                <li><span>text-align: center;</span> centers the message visually.</li>
+                                <li><span>font-weight: bold;</span> ensures emphasis.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+
+                <h3 class="link">Link to the Page: <a href="../pages/table.html">Table</a></h3>
+            </div>
+
+            <div>
+                <h2 class="pages-section-subheading-one">Content Page (Empowering Farmers to Achieve Zero Hunger)</h2>
+                
+                <ul>
+                    <li class="pages-section-subheading-two">Title & Structure</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;h1 class="article-heading"&gt;</span> creates the main title.</li>
+                                <li>The <span>&lt;main class="article-container"&gt;</span> wraps the entire content for structured layout.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>font-size: 32px;</span> Ensures prominence.</li>
+                                <li><span>text-align: center;</span> Centers the title.</li>
+                                <li><span>color: #6b4f1d;</span> Uses an earthy brown tone for an agricultural theme.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Subheadings & Section Hierarchy</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;h2 class="article-sub-heading"&gt;</span> marks major sections.</li>
+                                <li>The <span>&lt;h3 class="article-sub-subheading"&gt;</span> adds hierarchy under each section.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>border-bottom: 3px solid #c28400;</span> Enhances visual separation.</li>
+                                <li><span>font-size: 26px;</span> Ensures clear section division.</li>
+                                <li><span>color: #c28400;</span> Matches the theme.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Paragraph Styling</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>Content blocks are placed inside <span>&lt;p&gt;</span> elements.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>text-align: justify;</span> Ensures clean text alignment.</li>
+                                <li><span>color: #444;</span> Soft contrast for easy reading.</li>
+                                <li><span>font-size: 18px;</span> Ensures readability.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Images & Media</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;div class="article-image"&gt;</span> wraps images for styling.</li>
+                                <li>The <span>&lt;img src="../images/content-1-image-1.png" alt="Farmers working in the field"&gt;</span> ensures accessibility.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>max-width: 100%;</span> Ensures responsiveness.</li>
+                                <li><span>border-radius: 10px;</span> Smoothens edges for aesthetics.</li>
+                                <li><span>box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);</span> Adds depth.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Lists & Custom Bullet Styling</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;ul class="article-u-list"&gt;</span> creates unordered lists.</li>
+                                <li>Each <span>&lt;li&gt;</span> element contains key information.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>padding-left: 30px;</span> Improves readability.</li>
+                                <li><span>position: relative;</span> Aligns list items properly.</li>
+                                <li><span>content: "✔";</span> Replaces default bullets with checkmarks.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Blockquote (Highlighting Key Messages)</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;blockquote&gt;</span> element is used for impactful quotes.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>font-size: 20px;</span> Enhances readability.</li>
+                                <li><span>background: #fdf3c4;</span> Highlights key messages.</li>
+                                <li><span>border-left: 5px solid #c28400;</span> Adds a visual emphasis.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li class="pages-section-subheading-two">Call to Action</li>
+                    <ul>
+                        <li><strong>HTML: </strong>
+                            <ul>
+                                <li>The <span>&lt;h2 class="article-sub-heading"&gt;Call to Action&lt;/h2&gt;</span> emphasizes final appeal.</li>
+                            </ul>
+                        </li>
+                        <li><strong>CSS: </strong>
+                            <ul>
+                                <li><span>color: #d9534f;</span> Uses a distinct color for urgency and emphasis.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+
+                <h3 class="link">Link to the Page: <a href="../pages/content_ST2.html">Content Page 2</a></h3>
+            </div>
+        </div>
+        
+        <div class="challenges-section">
+            <h2 class="challenges-section-heading">Challenges and Lessons Learned</h2>
+        
+            <ul>
+                <li class="challenges-section-subheading-two">
+                    <span>Layout Issues</span>
+                    <p>Aligning elements and creating complex layouts can be tricky, especially when working with different CSS properties such as float, flexbox, or grid. Debugging layout issues, especially with nested elements or complex designs, was time-consuming and required a solid understanding of CSS layout techniques.</p>
+                    <ul>
+                        <li>Learned how to effectively use Flexbox and Grid for better alignment.</li>
+                        <li>Discovered the importance of browser developer tools for debugging.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>Text and Font Rendering</span>
+                    <p>Different devices and browsers render fonts in slightly different ways, leading to text being displayed differently across various screens. Ensuring legibility and aesthetic consistency, especially with custom web fonts, was a challenge.</p>
+                    <ul>
+                        <li>Gained an understanding of font fallback strategies.</li>
+                        <li>Used CSS properties like `font-smoothing` and `letter-spacing` for better readability.</li>
+                    </ul>
+                </li>
+        
+                <li class="challenges-section-subheading-two">
+                    <span>Maintaining Consistency</span>
+                    <p>As students implementing CSS for the first time, maintaining consistent design elements (such as colors, typography, and spacing) was challenging.</p>
+                    <ul>
+                        <li>Created a style guide to maintain uniformity.</li>
+                        <li>Used CSS variables for easier theme management.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="ref-section">
+            <h2 class="ref-section-heading">References</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">W3 Schools Tutorials</a></li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="../svgs/website-logo.svg" alt="Zero Hunger Initiative">
+                <img src="../svgs/un-logo.svg" alt="United Nations">
+            </div>
+
+            <!-- About Us Links -->
+            <div class="footer-links">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Page Editors</h3>
+                <ul>
+                    <li><a href="#">Student 1</a></li>
+                    <li><a href="../pages/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="#">Student 3</a></li>
+                    <li><a href="#">Student 4</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Sign Up For All The SDG2 News</p>
+                <div class="newsletter-input">
+                    <input type="text" placeholder=" ">
+                    <button>GO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Contact | Copyright | Privacy Notice | Terms Of Use</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

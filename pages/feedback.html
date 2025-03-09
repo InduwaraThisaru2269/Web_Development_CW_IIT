@@ -21,9 +21,9 @@
         <ul class="nav-links">
             <li><a href="../pages/home.html">HOME</a></li>
             <li><a href="../pages/table.html">DATA</a></li>
-            <li><a href="#">VOLUNTEER</a></li>
+            <li><a href="../pages/volunteer.html">VOLUNTEER</a></li>
             <li><a href="../pages/feedback.html" class="active">FEEDBACK</a></li>
-            <li><a href="#">TEAM</a></li>
+            <li><a href="../pages/teampage.html">TEAM</a></li>
             <li><a href="/pages/sitemap.html">SITE MAP</a></li>
         </ul>
 
@@ -36,7 +36,6 @@
 
     <div class="feedback-container">
         <h1>We Value Your Feedback </h1>
-
         
 
         <form onsubmit="showPopup(event)">
@@ -46,7 +45,7 @@
                 <input type="text" placeholder="Last Name" required>
             </div>
            
-            <label > Email Address</label>
+            <label > Email Address:</label>
             <input type ="email-address"  placeholder="Enter Your Email Address" required>
             
             <label> Contact Number: </label>
@@ -77,16 +76,25 @@
 
             <label> Give us your feedback on our website: </label>
             <textarea placeholder="Write your feedback here..."></textarea>
+            <br>
 
             <button type="submit" class="submit-btn"> Submit Feedback </button>
-
+            
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p>Thank you for your feedback! 😊</p>
+                    <button onclick="closePopup()"> OK </button>
+                </div>
+            </div>
         </form>
         <div id="popup" class="popup">
             <div class="popup-content">
                 <p>Thank you for your feedback! 😊</p>
                 <button onclick="closePopup()"> OK </button>
             </div>
+        </div>
     </div>
+
 
 
 
@@ -103,16 +111,16 @@
             <div class="footer-links">
                 <h3>About Us</h3>
                 <ul>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="../pages/teampage.html">Our Team</a></li>
+                    <li><a href="../pages/volunteer.html">Volunteer</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
                 <h3>Page Editors</h3>
                 <ul>
-                    <li><a href="#">Student 1</a></li>
-                    <li><a href="#">Student 2</a></li>
+                    <li><a href="#">Sanketh Kudahetti</a></li>
+                    <li><a href="../pages/pageEditor_ST2.html">Induwara Thisaru</a></li>
                     <li><a href="#">Student 3</a></li>
                     <li><a href="#">Student 4</a></li>
                 </ul>
