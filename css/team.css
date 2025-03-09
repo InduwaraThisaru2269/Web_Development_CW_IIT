@@ -1,16 +1,11 @@
 /*content section*/
-h2{
-    color: #6b4f1d;
-    text-align: center;
-    font-size: 1.8em;
 
- }
-  h3{
+.member-details h3{
     color: #ffcc00;
     margin-top: 20px;
   }
 
-  ul{
+ul{
     padding-left: 20px;
   }
 
