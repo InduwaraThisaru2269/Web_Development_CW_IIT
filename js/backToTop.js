@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
-            backToTopButton.style.display = "flex";
+            backToTopButton.classList.add("show");
         } else {
-            backToTopButton.style.display = "none";
+            backToTopButton.classList.remove("show");
         }
     });
 
@@ -13,3 +13,4 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
+
